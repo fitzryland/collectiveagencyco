@@ -1,0 +1,1423 @@
+/*
+Theme Name: 	Collective Agency
+Version: 		2.0
+Author: 		Fitz Ryland
+Author URI: 	http://fitzhughryland.com
+*/
+/*
+
+Table Of Contents:
+
+1. Variables
+2. Resets
+3. General
+4. Pages
+5. Catch Alls
+
+*/
+
+
+/****************************   1. Variables   ****************************/
+$red:#97372F;
+$darkRed:#4E1C17;
+$creamF:rgb(230, 215, 199);
+$cream:rgba(230, 215, 199, 0.9);
+
+$border:2px solid $red;
+$mainW:47em;
+$sideW:21em;
+
+$socialW: 80px;
+
+@mixin roundAll($radius: 0.5em) {
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	border-radius:$radius;
+}
+@mixin rounded($side1, $side2, $radius: 0.5em) {
+  border-#{$side1}-#{$side2}-radius: $radius;
+  -moz-border-radius-#{$side1}-#{$side2}: $radius;
+  -webkit-border-#{$side1}-#{$side2}-radius: $radius;
+}
+@mixin boxFill($radius: 0.5em) {
+	background-color:$creamF;
+	background-color:$cream;
+	border:$border;
+	@include roundAll($radius);
+}
+@mixin curItemAfterFill($radius: 0.5em, $bottom: -0.6em, $color: $red) {
+	background-color:$color;
+	bottom:$bottom;
+	content:"";
+	-webkit-border-top-left-radius: $radius;
+	-webkit-border-top-right-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	-moz-border-radius-topright: $radius;
+	border-top-left-radius: $radius;
+	border-top-right-radius: $radius;
+	height:$radius;
+	left:50%;
+	margin-left:$radius * -1;
+	position:absolute;
+	width:$radius * 2;
+}
+
+/****************************   2. Resets   ****************************/
+* { outline:none; }
+section, article, header, footer { display:block; }
+img { border:none; }
+
+/****************************   3. General TEST  ****************************/
+::-moz-selection {
+	background-color:$red;
+	color:$creamF;
+}
+::selection      {
+	background-color:$red;
+	color:$creamF;
+}
+body {
+	color:black;
+	background-color:$creamF;
+	background-color:$cream;
+	font:14px 'PT Sans', sans-serif;
+	margin:0 auto;
+	width:70em;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:$darkRed;
+	font-weight:normal;
+}
+h1, h2 {
+	font-family:'Lobster', cursive;
+}
+h3, h4, h5, h6 {
+	font-family:'PT Sans 700', sans-serif;
+}
+h1 {
+	font-size:3em;
+}
+h2 {
+	font-size:2em;
+}
+a:link, a:visited {
+	color:$red;
+}
+a:hover, a:active {
+	color:$darkRed;
+}
+.button {
+	@include boxFill();
+	padding:1em;
+	text-align:center;
+}
+.button:hover {
+	background-color:$red;
+	color:$cream;
+	cursor:pointer;
+}
+header {
+	@include boxFill(1.2em);
+	border-left:none;
+	margin:1em 0 0 0;
+	overflow:hidden;
+	h1 {
+		float:left;
+		font-size:3em;
+		margin:0.5em 0;
+		padding:0;
+		
+	}
+}
+.logo {
+	background-color:$red;
+	@include rounded(top, right, 1em);
+	@include rounded(bottom, right, 1em);
+	display:block;
+	float:left;
+	width:325px;
+	a:link, a:visited {
+		text-decoration:none;
+	}
+	a:hover, a:active {
+		background-color:transparent;
+		color:$red;
+	}
+	h1 {
+		color:$cream;
+		padding-left:23px;
+	}
+	img {
+		padding-bottom:0.5em;
+	}
+}
+.tagline {
+	display:block;
+	float:left;
+	margin:2em 0 0 2em;
+	width:21em;
+}
+.contWidg {
+	float:right;
+	font-size:0.9em;
+	margin:2em 1.8em 0 0;
+	text-align:right;
+	ul {
+		list-style-type:none;
+		margin:0;
+		padding:0;
+	}
+}
+section {
+	@include boxFill();
+	margin:0;
+	padding:0;
+	width:$mainW;
+}
+section:after {
+	clear:both;
+	content: "";
+	display: table;
+}
+section.transp {
+	background-color:transparent;
+	border:0px solid transparent;
+	width:auto;
+}
+footer {
+	@include boxFill();
+	background:$cream url('images/bigBirdsRed.png') no-repeat bottom;
+	margin:4em 0;
+	padding:1em 1em 200px;
+	position:relative;
+	.l {
+		float:left;
+		text-align:left;
+	}
+	.r {
+		float:right;
+		text-align:right;
+	}
+	.contWidg {
+		float:left;
+		margin:0;
+		text-align:left;
+	}
+}
+.menu-footer-nav-container {
+	* {
+		margin:0;
+		padding:0;
+	}
+	ul {
+		list-style-type:none;
+	}
+}
+.social {
+	float:left;
+	a {
+		display:block;
+		height:72px;
+		float:left;
+		margin:0 1em;
+		overflow:hidden;
+		position:relative;
+		width:72px;
+		img {
+			position:absolute;
+		}
+		.rss {
+			left:0;
+		}
+		.email {
+			left:-81px;
+		}
+		.twitter {
+			left:-162px;
+		}
+		.google {
+			left:-244px;
+		}
+		.facebook {
+			left:-325px;
+		}
+		.linkedin {
+			left:-407;
+		}
+		.pinterest {
+			left:-488px;
+		}
+	}
+	a:hover img {
+		top:$socialW * -1;
+	}
+}
+/**************   NAVIGATION   **************/
+.menu-main-navigation-container:after {
+	clear:both;
+	content: "";
+	display: table;
+}
+.menu-main-navigation-container {
+	@include boxFill(1em);
+	clear:both;
+	margin:2em auto;
+	padding:0;
+	text-align:center;
+	ul {
+		font-size:1.2em;
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		li {
+			display:inline;
+			position:relative;
+			ul {
+				background-color:$creamF;
+				background-color:$cream;
+				-webkit-border-bottom-right-radius:0.5em;
+				-moz-border-radius-bottomright:0.5em;
+				border-bottom-right-radius:0.5em;
+				-webkit-border-bottom-left-radius:0.5em;
+				-moz-border-radius-bottomleft:0.5em;
+				border-bottom-left-radius:0.5em;
+				display:none;
+				position:absolute;
+				top:1.4em;
+				left:0;
+				z-index:1001;
+				li {
+					border-top:none;
+					border-right:$border;
+					border-bottom:none;
+					border-left:$border;
+					display:block;
+					float:none;
+					font-size:0.8em;
+				}
+				li:first-child {
+					border-bottom-left-radius:0;
+					border-top-left-radius:0;
+				}
+				li:last-child {
+					-webkit-border-bottom-left-radius:0.5em;
+					-webkit-border-bottom-right-radius:0.5em;
+					-moz-border-radius-bottomleft:0.5em;
+					-moz-border-radius-bottomright:0.5em;
+					border-bottom-left-radius:0.5em;
+					border-bottom-right-radius:0.5em;
+					border-top-right-radius:0;
+					border-bottom:$border;
+				}
+			}
+		}
+	}
+	a {
+		display:inline-block;
+		padding:0.5em 1em;
+		text-decoration:none;
+	}
+	
+	.current-menu-item {
+		position:relative;
+	}
+	.current-menu-item:after {
+		@include curItemAfterFill();
+	}
+	.current-menu-parent, .current_page_parent {
+		position:relative;
+	}
+	.current-menu-parent:after, .current_page_parent:after {
+		@include curItemAfterFill();
+	}
+	.sub-menu .current-menu-item:after {
+		background-color:$red;
+		bottom:50%;
+		content:"";
+		-webkit-border-radius:0;
+		-moz-border-radius:0;
+		border-radius:0;
+		-webkit-border-top-right-radius:0.5em;
+		-webkit-border-bottom-right-radius:0.5em;
+		-moz-border-radius-topright:0.5em;
+		-moz-border-radius-bottomright:0.5em;
+		border-top-right-radius:0.5em;
+		border-bottom-right-radius:0.5em;
+		height:1em;
+		left:0.5em;
+		margin-bottom:-0.5em;
+		position:absolute;
+		width:0.5em;
+	}
+	
+}
+.sidebar {
+	float:right;
+	width:$sideW;
+	> * {
+		@include boxFill();
+		margin-bottom:1em;
+		padding:1em;
+	}
+	.generalSidebar {
+		.mc_custom_border_hdr {
+			color:$red;
+			font:2.5em 'Lobster', cursive;
+			text-align:center;
+		}
+		#mc_subheader {
+			margin:1em 0;
+		}
+		.mc_merge_var {
+			margin:0.5em 0;
+		}
+		.mc_signup_submit {
+			margin:1em;
+			.button {
+				color:$red;
+			}
+		}
+	}
+}
+#mc-indicates-required {
+	display:none;
+}
+body.page-template-default {
+	section {
+		padding:0 1em 1em;
+		width:$mainW - 2;
+		h1 {
+			text-align:center;
+		}
+	}
+}
+/****************************   4. Pages   ****************************/
+
+/**************   PAGE DEFAULT   **************/
+
+/**************   HOME   **************/
+body.home {
+	section {
+		background-color:$creamF;
+		background-color:$cream;
+		border:$border;
+		float:left;
+		margin:3em 0 0;
+		padding:0;
+		width:52%;
+		p {
+			font-size:1.1em;
+			margin:1em;
+		}
+	}
+}
+.homeR {
+	float:right;
+	margin:1em 0 4em;
+	text-align:center;
+	width:45%;
+	.homeButtons:last-child {
+		@include boxFill();
+		margin-top:1em;
+		padding:1em;
+		.mc_custom_border_hdr {
+			color:$red;
+			font:2em 'lobster', cursive;
+			margin:0.5em 0;
+		}
+	}
+	ul {
+		font:1.5em 'Lobster', cursive;
+		list-style-type:none;
+		margin:0;
+		padding:0;
+	}
+	li {
+		margin:1em 0 3em 0;
+		a:link, a:visited {
+			@include boxFill();
+			padding:1em;
+		}
+		a:hover, a:active {
+			background-color:$red;
+			color:$cream;
+		}
+	}
+	p {
+		@include boxFill();
+		margin:0;
+		padding:1em;
+		a, span {
+			color:$red;
+			cursor:pointer;
+			font-weight:bold;
+			padding:1em;
+		}
+	}
+	a {
+		text-decoration:none;
+	}
+}
+/**************   ABOUT   **************/
+body.page-template-about-php section {
+	margin:0;
+	padding:0;
+	h1 {
+		text-align:center;
+	}
+}
+.aboutWidget {
+	@include boxFill();
+	margin:0 1em 1em 0;
+	padding:0 1em 1em 1em;
+	float:left;
+	width:21.2em;
+}
+.aboutWidget:nth-child(3) {
+	float:right;
+	margin:0;
+	width:18.7em;
+	img {
+		width:100%;
+	}
+}
+.whoWeAre {
+	float:left;
+	width:$mainW;
+	.item {
+		@include boxFill();
+		margin-top:1em;
+		padding:0 1em 1em;
+		img {
+			float:right;
+			margin:3em 2em 2em 3em;
+		}
+		h2, h3 {
+			text-align:center;
+		}
+	}
+	.item:first-child {
+		h2 {
+			font-size:2.5em;
+			margin:0.5em;
+			text-align:center;
+		}
+	}
+}
+/**************   MEMBERSHIP, MEETINGS, & EVENTS   **************/
+.cell {
+	background-color:$creamF;
+	background-color:$cream;
+	border-right:1px solid $red;
+	border-bottom:1px solid $red;
+	float:left;
+	height:1.7em;
+	padding:0.5em 0.2em 0;
+}
+.r1 {
+	border-top:$border;
+}
+.c1 {
+	border-left:$border;
+}
+.c4 {
+	border-right:$border;
+}
+.cell:nth-child(4) {
+	-webkit-border-top-right-radius: 0.5em;
+	-moz-border-radius-topright: 0.5em;
+	border-top-right-radius: 0.5em;
+}
+#priceGridMemSchol, .meetBlock:first-child, .eventBlock {
+	font-size:1.5em;
+	margin:3em auto 0;
+	text-align:center;
+	.cell:first-child {
+		background-color:transparent;
+		border-color:transparent;
+		position:relative;
+		h1 {
+			background-color:$creamF;
+			background-color:$cream;
+			border:$border;
+			border-right-width:1px;
+			border-bottom-width:1px;
+			-webkit-border-radius:0.5em;
+			-webkit-border-bottom-right-radius: 0;
+			-moz-border-radius:0.5em;
+			-moz-border-radius-bottomright: 0;
+			border-radius:0.5em;
+			border-bottom-right-radius: 0;
+			bottom:-0.03em;
+			color:$red;
+			margin:0;
+			padding:0.7em;
+			position:absolute;
+			right:-0.03em;
+			width:6.6em;
+		}
+	}
+	h1, h2, h3 {
+		margin:-0.2em 0 0 0;
+	}
+	h1 {
+		font-size:1.5em;
+	}
+	h2 {
+		font:1.1em 'PT Sans', sans-serif;
+		a {
+			text-decoration:none;
+		}
+	}
+	h3 {
+		font:1.2em 'PT Sans', sans-serif;
+	}
+	.button {
+		color:$red;
+		padding:0;
+	}
+	.button:hover {
+		color:$cream;
+	}
+	.ivSubmit {
+		opacity:0.5;
+	}
+	.ivSubmit:hover {
+		background-color:$creamF;
+		background-color:$cream;
+		color:$red;
+		cursor:default;
+	}
+	.hidden {
+		display:none;
+	}
+	#flexAmt, #permAmt, #upTo125, #upTo45, #conRoom, #conRoomWK {
+		background-color:$creamF;
+		background-color:$cream;
+		font-size:1.3em;
+		margin:-0.2em 0 0 0;
+		text-align:center;
+		width:90%;
+	}
+}
+.fine, .desc {
+	@include boxFill();
+	float:left;
+	padding:0 1em;
+}
+.desc {
+	margin:-5em 1.5em 0 0;
+	width:32.5em;
+}
+.fine {
+	width:31em;
+	margin-top:1em;
+}
+body.page-template-membership-php {
+	section {
+		.desc {
+			margin:-12em 1.5em 0 0;
+			width:29.5em;
+		}
+	}
+}
+body.page-template-scholarships-php {
+	section {
+		.desc {
+			margin:-12em 1.5em 0 0;
+			width:29.5em;
+		}
+	}
+}
+body.page-template-meetings-php {
+	section {
+		.desc {
+			margin:-5em 1.5em 0 0;
+			width:31em;
+		}
+	}
+}
+/**************   MEMBERSHIP   **************/
+.memBlock:last-child {
+	@include roundAll();
+	margin:2em 0;
+	padding:0 1em;
+}
+.cell {
+	width:10.63em;
+}
+.r10 {
+	border-bottom:none;
+}
+.lower, .higher {
+	font-size:2em;
+}
+.transpBorder {
+	border-color:transparent;
+}
+.rOnlyBorder {
+	border-bottom-color:transparent;
+}
+body.page-template-membership-php .memBlock {
+	margin:0 auto;
+	width:67em;
+}
+#priceGridMemSchol {
+	.cell:nth-child(13), .cell:nth-child(14), .cell:nth-child(17), .cell:nth-child(18), .cell:nth-child(21), .cell:nth-child(22), .cell:nth-child(25), .cell:nth-child(26), .cell:nth-child(27), .cell:nth-child(28) {
+		background-color:transparent;
+		border-color:transparent;
+	}
+	.cell:nth-child(9), .cell:nth-child(23) {
+		@include rounded(bottom, left);
+		border-bottom-width:2px;
+	}
+	.cell:nth-child(10) {
+		border-bottom:$border;
+	}
+	.cell:nth-child(11), .cell:nth-child(12) {
+		border-top:2px solid transparent;
+	}
+	.cell:nth-child(15), .cell:nth-child(19), .cell:nth-child(23) {
+		border-left:$border;
+		width:10.5em;
+	}
+	.cell:nth-child(24) {
+		border-bottom:$border;
+		@include rounded(bottom, right);
+	}
+}
+/****************************   MEETINGS   ****************************/
+.meetBlock {
+	@include roundAll();
+}
+.meetBlock:first-child .cell:first-child h1 {
+	right:-0.04em;
+}
+.meetBlock:first-child {
+	background-color:transparent;
+	border-color:transparent;
+	width:40.2em;
+	.cell {
+		width:9.56em;
+	}
+	.r1 {
+		border-top:$border;
+	}
+	.c1 {
+		border-left:$border;
+	}
+	.c4 {
+		border-right:$border;
+	}
+	.cell:nth-child(13), .cell:nth-child(14), .cell:nth-child(17), .cell:nth-child(18), .cell:nth-child(19), .cell:nth-child(20) {
+		background-color:transparent;
+		border-color:transparent;
+	}
+	.cell:nth-child(9), .cell:nth-child(15) {
+		-webkit-border-bottom-left-radius: 0.5em;
+		-moz-border-radius-bottomleft: 0.5em;
+		border-bottom-left-radius: 0.5em;
+		border-bottom-width:2px;
+	}
+	.cell:nth-child(10) {
+		border-bottom-width:2px;
+	}
+	.cell:nth-child(11), .cell:nth-child(12) {
+		border-top:2px solid transparent;
+	}
+	.cell:nth-child(15) {
+		border-left:$border;
+		width:9.46em;
+	}
+	.cell:nth-child(16) {
+		border-bottom:$border;
+		-webkit-border-bottom-right-radius: 0.5em;
+		-moz-border-radius-bottomright: 0.5em;
+		border-bottom-right-radius:0.5em;
+	}
+}
+.meetBlock:after, .eventBlock:after {
+	clear:both;
+	content:"";
+	display:table;
+}
+/****************************   EVENTS   ****************************/
+body.events-gridview {
+	section.transp {
+		width:100%;
+	}
+}
+.eventBlock {
+	width:36.8em;
+	.c2, .c3, .c4 {
+		width:8em;
+	}
+	.cell:first-child, .cell:nth-child(17), .cell:nth-child(18), .cell:nth-child(21), .cell:nth-child(22), .cell:nth-child(23), .cell:nth-child(24)  {
+		background-color:transparent;
+		border-color:transparent;
+	}
+	.cell:nth-child(13), .cell:nth-child(14), .cell:nth-child(19), .cell:nth-child(20) {
+		border-bottom:$border;
+	}
+	.cell:nth-child(15), .cell:nth-child(16) {
+		border-top:2px solid transparent;
+	}
+	.cell:nth-child(13), .cell:nth-child(19) {
+		-webkit-border-bottom-left-radius: 0.5em;
+		-moz-border-radius-bottomleft: 0.5em;
+		border-bottom-left-radius: 0.5em;
+	}
+	.cell:nth-child(19) {
+		border-left:$border;
+	}
+	.cell:nth-child(20) {
+		-webkit-border-bottom-right-radius: 0.5em;
+		-moz-border-radius-bottomright: 0.5em;
+		border-bottom-right-radius:0.5em;
+	}
+	.cell:nth-child(19), .cell:nth-child(20) {
+		width:7.95em;
+	}
+}
+body.page-template-events-php {
+	section {
+		.desc {
+			margin:-5em 1.5em 0 0;
+			width:31.5em;
+		}
+		.fine {
+			width:29em;
+		}
+	}
+}
+body.page-id-3277 section {
+	width:100%;
+	padding:0;
+}
+#tribe-events-content {
+	margin-top:1.5em;
+	padding:0;
+	.tribe-events-month-nav {
+		@include boxFill(1em);
+		float:left;
+		padding:1em;
+		position:inherit;
+	}
+	.tribe-events-calendar-buttons {
+		float:right;
+		position:inherit;
+		top:inherit;
+	}
+	.tribe-events-button-on, .tribe-events-button-off {
+		@include boxFill(1em);
+		color:$red !important;
+		margin:0 1em 2em;
+		padding:1.5em;
+		position:relative;
+	}
+	a.tribe-events-button-off {
+
+	}
+	a.tribe-events-button-off:hover, a.tribe-events-button-off:active {
+		background-color:$red;
+		color:$cream !important;
+	}
+	.tribe-events-button-on {
+		
+	}
+	.tribe-events-button-on:after {
+		@include curItemAfterFill(1em, 0);
+	}
+	table.tribe-events-calendar {
+		@include boxFill();
+		border-color:$red;
+		th {
+			background-color:$red;
+			color:$cream;
+		}
+		td {
+			border-color:$red;
+		}
+		.tribe-events-past {
+			.daynum {
+				background-color:$creamF;
+				background-color:$cream;
+			}
+		}
+		.tribe-events-present {
+			.daynum {
+				background-color:$red;
+				color:white;
+			}
+		}
+		.tribe-events-future {
+			.daynum {
+				background-color:lighten($cream, 20%);
+			}
+		}
+	}
+	.tribe-events-tooltip h5 {
+		background-color:$red;
+		color:white;
+	}
+}
+#tribe-events-loop > div {
+	@include boxFill();
+	margin:1.5em 0;
+	padding:1em !important;
+}
+#tribe-events-nav-below div a:link, #tribe-events-nav-below div a:visited {
+	@include boxFill(1em);
+	padding:1em;
+}
+#tribe-events-nav-below div a:hover, #tribe-events-nav-below div a:active {
+	background-color:$red;
+	color:$cream;
+}
+.tribe-events-event-list-meta table td {
+	background-color:transparent;
+}
+.tribe-events-events .tribe-events-event-list-meta {
+	border:none;
+}
+body.single-tribe_events {
+	.back, .navlink {
+		display:block;
+		margin:2em;
+	}
+	.event-passed {
+		@include boxFill();
+		color:$red;
+		text-shadow:none;
+	}
+	.back a:link, .back a:visited, .navlink a:link, .navlink a:visited {
+		@include boxFill();
+		padding:1em;
+	}
+	.back a:hover, .back a:active, .navlink a:hover, .navlink a:active {
+		background-color:$red;
+		color:$cream;
+	}
+	#tribe-events-event-meta, .entry-content {
+		@include boxFill();
+		padding:1em;
+	}
+}
+body.single-tribe_events, body.events-list {
+	section {
+		padding:0;
+		width:100%;
+	}
+	.post-list {
+		width:$mainW;
+	}
+}
+/****************************   GOVERNANCE   ****************************/
+body.page-template-governance-php section {
+	h1 {
+		text-align:center;
+	}
+	p {
+		margin:1em;
+	}
+}
+.govDocsList {
+	list-style-type:none;
+	margin:2em 0 3em;
+	padding:0;
+	li {
+		a:link, a:visited {
+			font-size:2em;
+			padding:0.5em;
+			text-decoration:none;
+		}
+		a:hover, a:active {
+			text-decoration:underline;
+		}
+	}
+}
+
+/****************************   AGENDAS & NOTES   ****************************/
+body.meeting-agendas-notes {
+	article {
+		@include boxFill();
+		display:block;
+		margin:0 auto 2em;
+		padding:1.5em;
+		width:44em;
+		h1 {
+			margin-bottom:0.5em;
+			text-align:center;
+			a:link, a:visited {
+				text-decoration:none;
+			}
+			a:hover, a:active {
+				text-decoration:underline;
+			}
+		}
+		h2 {
+			text-align:center;
+		}
+	}
+	section {
+		margin:0;
+		padding:0;
+		width:$mainW;
+		.title {
+			h1, h2 {
+				text-align:center;
+				margin-left:0;
+			}
+		}
+	}
+}
+.paginationNav {
+	height:3.5em;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	li {
+		padding:0;
+		a:link, a:visited {
+			@include boxFill();
+			padding:1em;
+			text-decoration:none;
+		}
+		a:hover, a:active {
+			background-color:$red;
+			color:$cream;
+		}
+	}
+	li.newer {
+		float:left;
+	}
+	li.older {
+		float:right;
+	}
+}
+.pagePos {
+	@include boxFill();
+	margin:0 auto;
+	padding:1em;
+	text-align:center;
+	text-decoration:none;
+	a {
+		padding:0.2em;
+	}
+	.cur {
+		font-size:1.5em;
+	}
+}
+.civicBlock {
+	@include boxFill();
+	margin:0 0 2em 0;
+	padding:0 1.5em 1em;
+}
+.title {
+	a:link, a:visited {
+		text-decoration:none;
+	}
+	a:hover, a:active {
+		text-decoration:underline;
+	}
+}
+.agenNote {
+	border-top:$border;
+}
+.agendasnotesnav {
+	h2 {
+		text-align:center;
+	}
+}
+body.single-agendas_and_notes {
+	section {
+		width:44em;
+	}
+	article {
+		@include boxFill();
+		margin-bottom:2em;
+		padding:0 1.5em 1em;
+		h1 {
+			text-align:center;
+		}
+	}
+}
+.accordion {
+	margin:0;
+	padding:0;
+	* {
+		margin:0;
+		list-style-type:none;
+		padding:0;
+	}
+	li {
+		font-size:1.3em;
+		ul {
+			margin-left:0.5em;
+		}
+	}
+	li:hover {
+		cursor:pointer;
+		text-decoration:underline;
+	}
+	a:hover, a:link {
+		font-size:0.7em;
+	}
+	a:link, a:visited {
+		
+	}
+}
+/****************************   PROPOSALS   ****************************/
+body.page-template-proposals-php {
+	article {
+		@include boxFill();
+		display:block;
+		margin:0 auto 2em;
+		padding:1.5em;
+		width:44em;
+		h1 {
+			color:$red;
+			text-align:center;
+		}
+	}
+	section {
+		width:$mainW;
+	}
+	h1.title {
+		text-align:center;
+	}
+}
+/****************************   PHOTOS   ****************************/
+body.page-template-photos-php {
+	background-color:black;
+	.backstretch {
+		zoom: 1;
+		filter: alpha(opacity=50);
+		opacity: 0.5;
+	}
+	section {
+		background-color:transparent;
+		border-color:transparent;
+		padding:0em;
+		width:auto;
+		h1 {
+			text-align:center;
+		}
+	}
+}
+.galNavWrap {
+	@include boxFill();
+	float:right;
+	h1 {
+		text-align:center;
+	}
+}
+ul.galleryNav {
+	list-style-type:none;
+	margin:0;
+	padding:0 1em 0 2.5em;
+	li {
+		margin:0 0 0 1em;
+		padding:0;
+		h2 {
+			font:1.4em 'PT Sans 700', sans-serif;
+		}
+	}
+	li:hover, li.current {
+		cursor:pointer;
+		margin-left:0em;
+		position:relative;
+	}
+	li.current h2 {
+		color:$red;
+	}
+	li:hover:after, li.current:after {
+		background-color:$red;
+		-webkit-border-radius:0.5em;
+		-moz-border-radius:0.5em;
+		border-radius:0.5em;
+		content:"";
+		height:1em;
+		left:-1.5em;
+		margin-top:-0.5em;
+		position:absolute;
+		top:50%;
+		width:1em;
+	}
+}
+.flexslider {
+	@include boxFill();
+	overflow:hidden;
+	margin:0;
+	padding:1em;
+}
+.flexWrap {
+	position:relative;
+}
+.flexPanel {
+	display:none;
+}
+.flexPanel .current {
+	display:block;
+}
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+	display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+//.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+//	margin: 0 0 60px;
+//	background: #fff;
+//	border: 4px solid #fff;
+	position: relative;
+//	-webkit-border-radius: 4px;
+//	-moz-border-radius: 4px;
+//	-o-border-radius: 4px;
+//	border-radius: 4px;
+//	box-shadow: 0 1px 4px rgba(0,0,0,.2);
+//	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+//	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+//	-o-box-shadow: 0 1px 4px rgba(0,0,0,.2); zoom: 1;
+	width:700px;
+}
+.flex-viewport {
+	max-height: 2000px;
+	-webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+.carousel li {
+//	margin-right: 5px
+}
+
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
+.flex-direction-nav .flex-prev {left: -36px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {
+//	margin: 5px 0 0;
+	position: static;
+//	overflow: hidden;
+}
+.flex-control-thumbs li {
+//	width: 25%;
+	float: left;
+	margin: 0;
+}
+.flex-control-thumbs img {
+//	width: 100%;
+	display: block;
+	margin:0.5em;
+	opacity: .7;
+	cursor: pointer;
+}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
+/****************************   SLIDER END  ****************************/
+/****************************   BLOG   ****************************/
+.blogHeader {
+	@include boxFill();
+	margin:0 auto 1.5em;
+	padding:1.5em;
+	width:$mainW;
+	h1, h2, h3 {
+		text-align:center;
+	}
+	h1 {
+		margin-bottom:0;
+	}
+	a:link, a:visited {
+		text-decoration:none;
+	}
+	a:hover, a:active {
+		text-decoration:underline;
+	}
+}
+section.blog {
+	padding:0;
+	width:$mainW;
+	article {
+		@include boxFill();
+		margin:1em 0 2em;
+		padding:0 1em 1em;
+		h2.title {
+			font-size:2.2em;
+			text-align:center;
+		}
+		img.wp-post-image, img.alignnone {
+			display:block;
+			margin:0 auto;
+		}
+	}
+}
+.blogRotatorViewPort {
+	@include boxFill();
+	height:$sideW - 2em;
+	overflow:hidden;
+	padding:0;
+	position:relative;
+}
+.blogRotatorWrap {
+	display:block;
+	height:$sideW;
+	left:0;
+	position:absolute;
+	width:9999em;
+}
+.blogRotatorItem {
+	float:left;
+	height:$sideW - 2em;
+	width:$sideW - 0.4em;
+}
+.blogSidebar {
+	@include boxFill();
+	label {
+		display:none;
+	}
+	ul {
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		li:nth-child(1) {
+			border-top:1px solid $red;
+		}
+		li {
+			border-bottom:1px solid $red;
+			padding:0.4em 0;
+			text-align:center;
+			a:link, a:visited {
+				padding:0.5em;
+				text-decoration:none;
+			}
+			a:hover, a:active {
+				background-color:$red;
+				color:$cream;
+			}
+		}
+	}
+}
+.blogFooterWidgetArea {
+	margin-top:1.5em;
+	.blogFooterWidget {
+		@include boxFill();
+		display:inline;
+		float:left;
+		height:14.45em;
+		margin-right:1em;
+		padding:1em;
+		width:14.45em;
+	}
+	.blogFooterWidget:last-child {
+		margin:0;
+	}
+}
+/****************************   TESTIMONIALS   ****************************/
+body.page-template-testimonials-php section {
+	padding:0;
+	h1 {
+		margin-left:1em;
+		text-align:center;
+	}
+}
+.testi {
+	border-top:$border;
+	padding:0 1em;
+	h3 {
+		font:2em 'lobster', cursive;
+		margin:1em 0 0.5em 1.5em;
+	}
+	p {
+		margin:0;
+	}
+	blockquote {
+		@include roundAll(1em);
+		background-color:$creamF;
+		background-color:$cream;
+		margin:1em;
+		padding:2em;
+	}
+	blockquote:after, blockquote:before {
+		color:$red;
+		content:"\"";
+		font:1.5em 'Lobster', cursive;
+		font-weight:bold;
+		line-height:0.5em;
+	}
+}
+.testi:nth-child(2n) {
+	img {
+		float:right;
+	}
+}
+/****************************   404   ****************************/
+body.error404 section > * {
+	margin:1em;
+}
+/****************************   sitemap page   ****************************/
+body.page-template-sitemap-php section {
+	padding:1em;
+	width:$mainW - 2;
+}
+/****************************   5. Catch Alls   ****************************/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+.clear {
+	clear:both;
+}
