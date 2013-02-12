@@ -1,0 +1,1736 @@
+/*
+Theme Name: 	Collective Agency 2.1
+Version: 		2.1
+Author: 		Fitz Ryland
+Author URI: 	http://fitzhughryland.com
+*/
+/*
+
+Table Of Contents:
+
+1. Variables
+2. Resets
+3. General
+4. Pages
+5. Catch Alls
+
+*/
+/****************************   1. Variables   ****************************/
+/****************************   2. Resets   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\0000366}}
+* {
+  outline: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\0000367}}
+section, article, header, footer {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\0000368}}
+img {
+  border: none; }
+
+/****************************   3. General TEST  ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\0000371}}
+::-moz-selection {
+  background-color: #97372f;
+  color: #e6d7c7; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\0000375}}
+::selection {
+  background-color: #97372f;
+  color: #e6d7c7; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\0000379}}
+body {
+  color: black;
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  font: 14px "PT Sans", sans-serif;
+  margin: 0 auto;
+  width: 70em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\0000387}}
+h1, h2, h3, h4, h5, h6 {
+  color: #4e1c17;
+  font-weight: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\0000391}}
+h1, h2 {
+  font-family: "Lobster", cursive; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\0000394}}
+h3, h4, h5, h6 {
+  font-family: "PT Sans 700", sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\0000397}}
+h1 {
+  font-size: 3em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003100}}
+h2 {
+  font-size: 2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003103}}
+a:link, a:visited {
+  color: #97372f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003106}}
+a:hover, a:active {
+  color: #4e1c17; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003109}}
+.button {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003114}}
+.button:hover {
+  background-color: #97372f;
+  color: rgba(230, 215, 199, 0.9);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003119}}
+header {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 1.2em;
+  -moz-border-radius: 1.2em;
+  border-radius: 1.2em;
+  border-left: none;
+  margin: 1em 0 0 0;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003124}}
+  header h1 {
+    float: left;
+    font-size: 3em;
+    margin: 0.5em 0;
+    padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003132}}
+.logo {
+  background-color: #97372f;
+  border-top-right-radius: 1em;
+  -moz-border-radius-top-right: 1em;
+  -webkit-border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  -moz-border-radius-bottom-right: 1em;
+  -webkit-border-bottom-right-radius: 1em;
+  display: block;
+  float: left;
+  width: 325px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003139}}
+  .logo a:link, .logo a:visited {
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003142}}
+  .logo a:hover, .logo a:active {
+    background-color: transparent;
+    color: #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003146}}
+  .logo h1 {
+    color: rgba(230, 215, 199, 0.9);
+    padding-left: 23px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003150}}
+  .logo img {
+    padding-bottom: 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003154}}
+.tagline {
+  display: block;
+  float: left;
+  margin: 2em 0 0 2em;
+  width: 21em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003160}}
+.contWidg {
+  float: right;
+  font-size: 0.9em;
+  margin: 2em 1.8em 0 0;
+  text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003165}}
+  .contWidg ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003171}}
+section {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  margin: 0;
+  padding: 0;
+  width: 47em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003177}}
+section:after {
+  clear: both;
+  content: "";
+  display: table; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003182}}
+section.transp {
+  background-color: transparent;
+  border: 0px solid transparent;
+  width: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003187}}
+footer {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  background: rgba(230, 215, 199, 0.9) url("images/bigBirdsRed.png") no-repeat bottom;
+  margin: 4em 0;
+  padding: 1em 1em 200px;
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003193}}
+  footer .l {
+    float: left;
+    text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003197}}
+  footer .r {
+    float: right;
+    text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003201}}
+  footer .contWidg {
+    float: left;
+    margin: 0;
+    text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003208}}
+.menu-footer-nav-container * {
+  margin: 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003212}}
+.menu-footer-nav-container ul {
+  list-style-type: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003216}}
+.social {
+  float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003218}}
+  .social a {
+    display: block;
+    height: 72px;
+    float: left;
+    margin: 0 1em;
+    overflow: hidden;
+    position: relative;
+    width: 72px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003226}}
+    .social a img {
+      position: absolute; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003229}}
+    .social a .rss {
+      left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003232}}
+    .social a .email {
+      left: -81px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003235}}
+    .social a .twitter {
+      left: -162px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003238}}
+    .social a .google {
+      left: -244px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003241}}
+    .social a .facebook {
+      left: -325px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003244}}
+    .social a .linkedin {
+      left: -407; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003247}}
+    .social a .pinterest {
+      left: -488px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003251}}
+  .social a:hover img {
+    top: -80px; }
+
+/**************   NAVIGATION   **************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003256}}
+.menu-main-navigation-container:after {
+  clear: both;
+  content: "";
+  display: table; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003261}}
+.menu-main-navigation-container {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  clear: both;
+  margin: 2em auto;
+  padding: 0;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003267}}
+  .menu-main-navigation-container ul {
+    font-size: 1.2em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003272}}
+    .menu-main-navigation-container ul li {
+      display: inline;
+      position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003275}}
+      .menu-main-navigation-container ul li ul {
+        background-color: #e6d7c7;
+        background-color: rgba(230, 215, 199, 0.9);
+        -webkit-border-bottom-right-radius: 0.5em;
+        -moz-border-radius-bottomright: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        -webkit-border-bottom-left-radius: 0.5em;
+        -moz-border-radius-bottomleft: 0.5em;
+        border-bottom-left-radius: 0.5em;
+        display: none;
+        position: absolute;
+        top: 1.4em;
+        left: 0;
+        z-index: 1001; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003289}}
+        .menu-main-navigation-container ul li ul li {
+          border-top: none;
+          border-right: 2px solid #97372f;
+          border-bottom: none;
+          border-left: 2px solid #97372f;
+          display: block;
+          float: none;
+          font-size: 0.8em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003298}}
+        .menu-main-navigation-container ul li ul li:first-child {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003302}}
+        .menu-main-navigation-container ul li ul li:last-child {
+          -webkit-border-bottom-left-radius: 0.5em;
+          -webkit-border-bottom-right-radius: 0.5em;
+          -moz-border-radius-bottomleft: 0.5em;
+          -moz-border-radius-bottomright: 0.5em;
+          border-bottom-left-radius: 0.5em;
+          border-bottom-right-radius: 0.5em;
+          border-top-right-radius: 0;
+          border-bottom: 2px solid #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003315}}
+  .menu-main-navigation-container a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003321}}
+  .menu-main-navigation-container .current-menu-item {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003324}}
+  .menu-main-navigation-container .current-menu-item:after {
+    background-color: #97372f;
+    bottom: -0.6em;
+    content: "";
+    -webkit-border-top-left-radius: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
+    -moz-border-radius-topleft: 0.5em;
+    -moz-border-radius-topright: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    height: 0.5em;
+    left: 50%;
+    margin-left: -0.5em;
+    position: absolute;
+    width: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003327}}
+  .menu-main-navigation-container .current-menu-parent, .menu-main-navigation-container .current_page_parent {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003330}}
+  .menu-main-navigation-container .current-menu-parent:after, .menu-main-navigation-container .current_page_parent:after {
+    background-color: #97372f;
+    bottom: -0.6em;
+    content: "";
+    -webkit-border-top-left-radius: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
+    -moz-border-radius-topleft: 0.5em;
+    -moz-border-radius-topright: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    height: 0.5em;
+    left: 50%;
+    margin-left: -0.5em;
+    position: absolute;
+    width: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003333}}
+  .menu-main-navigation-container .sub-menu .current-menu-item:after {
+    background-color: #97372f;
+    bottom: 50%;
+    content: "";
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-top-right-radius: 0.5em;
+    -webkit-border-bottom-right-radius: 0.5em;
+    -moz-border-radius-topright: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    height: 1em;
+    left: 0.5em;
+    margin-bottom: -0.5em;
+    position: absolute;
+    width: 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003354}}
+.sidebar {
+  float: right;
+  width: 21em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003357}}
+  .sidebar > * {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    border: 2px solid #97372f;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003363}}
+  .sidebar .generalSidebar .mc_custom_border_hdr {
+    color: #97372f;
+    font: 2.5em "Lobster", cursive;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003368}}
+  .sidebar .generalSidebar #mc_subheader {
+    margin: 1em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003371}}
+  .sidebar .generalSidebar .mc_merge_var {
+    margin: 0.5em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003374}}
+  .sidebar .generalSidebar .mc_signup_submit {
+    margin: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003376}}
+    .sidebar .generalSidebar .mc_signup_submit .button {
+      color: #97372f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003382}}
+#mc-indicates-required {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003386}}
+body.page-template-default section {
+  padding: 0 1em 1em;
+  width: 45em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003389}}
+  body.page-template-default section h1 {
+    text-align: center; }
+
+/****************************   4. Pages   ****************************/
+/**************   PAGE DEFAULT   **************/
+/**************   HOME   **************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003400}}
+body.home section {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  float: left;
+  margin: 3em 0 0;
+  padding: 0;
+  width: 52%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003408}}
+  body.home section p {
+    font-size: 1.1em;
+    margin: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003414}}
+.homeR {
+  float: right;
+  margin: 1em 0 4em;
+  text-align: center;
+  width: 45%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003419}}
+  .homeR .homeButtons:last-child {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    border: 2px solid #97372f;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003423}}
+    .homeR .homeButtons:last-child .mc_custom_border_hdr {
+      color: #97372f;
+      font: 2em "lobster", cursive;
+      margin: 0.5em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003429}}
+  .homeR ul {
+    font: 1.5em "Lobster", cursive;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003435}}
+  .homeR li {
+    margin: 1em 0 3em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003437}}
+    .homeR li a:link, .homeR li a:visited {
+      background-color: #e6d7c7;
+      background-color: rgba(230, 215, 199, 0.9);
+      border: 2px solid #97372f;
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      border-radius: 0.5em;
+      padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003441}}
+    .homeR li a:hover, .homeR li a:active {
+      background-color: #97372f;
+      color: rgba(230, 215, 199, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003446}}
+  .homeR p {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    border: 2px solid #97372f;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    margin: 0;
+    padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003450}}
+    .homeR p a, .homeR p span {
+      color: #97372f;
+      cursor: pointer;
+      font-weight: bold;
+      padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003457}}
+  .homeR a {
+    text-decoration: none; }
+
+/**************   ABOUT   **************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003462}}
+body.page-template-about-php section {
+  margin: 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003465}}
+  body.page-template-about-php section h1 {
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003469}}
+.aboutWidget {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  margin: 0 1em 1em 0;
+  padding: 0 1em 1em 1em;
+  float: left;
+  width: 21.2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003476}}
+.aboutWidget:nth-child(3) {
+  float: right;
+  margin: 0;
+  width: 18.7em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003480}}
+  .aboutWidget:nth-child(3) img {
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003484}}
+.whoWeAre {
+  float: left;
+  width: 47em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003487}}
+  .whoWeAre .item {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    border: 2px solid #97372f;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    padding: 0 1em 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003491}}
+    .whoWeAre .item img {
+      float: right;
+      margin: 3em 2em 2em 3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003495}}
+    .whoWeAre .item h2, .whoWeAre .item h3 {
+      text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003500}}
+  .whoWeAre .item:first-child h2 {
+    font-size: 2.5em;
+    margin: 0.5em;
+    text-align: center; }
+
+/**************   MEMBERSHIP, MEETINGS, & EVENTS   **************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003508}}
+.cell {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border-right: 1px solid #97372f;
+  border-bottom: 1px solid #97372f;
+  float: left;
+  height: 1.7em;
+  padding: 0.5em 0.2em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003517}}
+.r1 {
+  border-top: 2px solid #97372f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003520}}
+.c1 {
+  border-left: 2px solid #97372f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003523}}
+.c4 {
+  border-right: 2px solid #97372f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003526}}
+.cell:nth-child(4) {
+  -webkit-border-top-right-radius: 0.5em;
+  -moz-border-radius-topright: 0.5em;
+  border-top-right-radius: 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003531}}
+#priceGridMemSchol, .meetBlock:first-child, .eventBlock {
+  font-size: 1.5em;
+  margin: 3em auto 0;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003535}}
+  #priceGridMemSchol .cell:first-child, .meetBlock:first-child .cell:first-child, .eventBlock .cell:first-child {
+    background-color: transparent;
+    border-color: transparent;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003539}}
+    #priceGridMemSchol .cell:first-child h1, .meetBlock:first-child .cell:first-child h1, .eventBlock .cell:first-child h1 {
+      background-color: #e6d7c7;
+      background-color: rgba(230, 215, 199, 0.9);
+      border: 2px solid #97372f;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      -webkit-border-radius: 0.5em;
+      -webkit-border-bottom-right-radius: 0;
+      -moz-border-radius: 0.5em;
+      -moz-border-radius-bottomright: 0;
+      border-radius: 0.5em;
+      border-bottom-right-radius: 0;
+      bottom: -0.03em;
+      color: #97372f;
+      margin: 0;
+      padding: 0.7em;
+      position: absolute;
+      right: -0.03em;
+      width: 6.6em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003560}}
+  #priceGridMemSchol h1, #priceGridMemSchol h2, #priceGridMemSchol h3, .meetBlock:first-child h1, .meetBlock:first-child h2, .meetBlock:first-child h3, .eventBlock h1, .eventBlock h2, .eventBlock h3 {
+    margin: -0.2em 0 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003563}}
+  #priceGridMemSchol h1, .meetBlock:first-child h1, .eventBlock h1 {
+    font-size: 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003566}}
+  #priceGridMemSchol h2, .meetBlock:first-child h2, .eventBlock h2 {
+    font: 1.1em "PT Sans", sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003568}}
+    #priceGridMemSchol h2 a, .meetBlock:first-child h2 a, .eventBlock h2 a {
+      text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003572}}
+  #priceGridMemSchol h3, .meetBlock:first-child h3, .eventBlock h3 {
+    font: 1.2em "PT Sans", sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003575}}
+  #priceGridMemSchol .button, .meetBlock:first-child .button, .eventBlock .button {
+    color: #97372f;
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003579}}
+  #priceGridMemSchol .button:hover, .meetBlock:first-child .button:hover, .eventBlock .button:hover {
+    color: rgba(230, 215, 199, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003582}}
+  #priceGridMemSchol .ivSubmit, .meetBlock:first-child .ivSubmit, .eventBlock .ivSubmit {
+    opacity: 0.5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003585}}
+  #priceGridMemSchol .ivSubmit:hover, .meetBlock:first-child .ivSubmit:hover, .eventBlock .ivSubmit:hover {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    color: #97372f;
+    cursor: default; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003591}}
+  #priceGridMemSchol .hidden, .meetBlock:first-child .hidden, .eventBlock .hidden {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003594}}
+  #priceGridMemSchol #flexAmt, #priceGridMemSchol #permAmt, #priceGridMemSchol #upTo125, #priceGridMemSchol #upTo45, #priceGridMemSchol #conRoom, #priceGridMemSchol #conRoomWK, .meetBlock:first-child #flexAmt, .meetBlock:first-child #permAmt, .meetBlock:first-child #upTo125, .meetBlock:first-child #upTo45, .meetBlock:first-child #conRoom, .meetBlock:first-child #conRoomWK, .eventBlock #flexAmt, .eventBlock #permAmt, .eventBlock #upTo125, .eventBlock #upTo45, .eventBlock #conRoom, .eventBlock #conRoomWK {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    font-size: 1.3em;
+    margin: -0.2em 0 0 0;
+    text-align: center;
+    width: 90%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003603}}
+.fine, .desc {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  float: left;
+  padding: 0 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003608}}
+.desc {
+  margin: -5em 1.5em 0 0;
+  width: 32.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003612}}
+.fine {
+  width: 31em;
+  margin-top: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003618}}
+body.page-template-membership-php section .desc {
+  margin: -12em 1.5em 0 0;
+  width: 29.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003626}}
+body.page-template-scholarships-php section .desc {
+  margin: -12em 1.5em 0 0;
+  width: 29.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003634}}
+body.page-template-meetings-php section .desc {
+  margin: -5em 1.5em 0 0;
+  width: 31em; }
+
+/**************   MEMBERSHIP   **************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003641}}
+.memBlock:last-child {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  margin: 2em 0;
+  padding: 0 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003646}}
+.cell {
+  width: 10.63em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003649}}
+.r10 {
+  border-bottom: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003652}}
+.lower, .higher {
+  font-size: 2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003655}}
+.transpBorder {
+  border-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003658}}
+.rOnlyBorder {
+  border-bottom-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003661}}
+body.page-template-membership-php .memBlock {
+  margin: 0 auto;
+  width: 67em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003666}}
+#priceGridMemSchol .cell:nth-child(13), #priceGridMemSchol .cell:nth-child(14), #priceGridMemSchol .cell:nth-child(17), #priceGridMemSchol .cell:nth-child(18), #priceGridMemSchol .cell:nth-child(21), #priceGridMemSchol .cell:nth-child(22), #priceGridMemSchol .cell:nth-child(25), #priceGridMemSchol .cell:nth-child(26), #priceGridMemSchol .cell:nth-child(27), #priceGridMemSchol .cell:nth-child(28) {
+  background-color: transparent;
+  border-color: transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003670}}
+#priceGridMemSchol .cell:nth-child(9), #priceGridMemSchol .cell:nth-child(23) {
+  border-bottom-left-radius: 0.5em;
+  -moz-border-radius-bottom-left: 0.5em;
+  -webkit-border-bottom-left-radius: 0.5em;
+  border-bottom-width: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003674}}
+#priceGridMemSchol .cell:nth-child(10) {
+  border-bottom: 2px solid #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003677}}
+#priceGridMemSchol .cell:nth-child(11), #priceGridMemSchol .cell:nth-child(12) {
+  border-top: 2px solid transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003680}}
+#priceGridMemSchol .cell:nth-child(15), #priceGridMemSchol .cell:nth-child(19), #priceGridMemSchol .cell:nth-child(23) {
+  border-left: 2px solid #97372f;
+  width: 10.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003684}}
+#priceGridMemSchol .cell:nth-child(24) {
+  border-bottom: 2px solid #97372f;
+  border-bottom-right-radius: 0.5em;
+  -moz-border-radius-bottom-right: 0.5em;
+  -webkit-border-bottom-right-radius: 0.5em; }
+
+/****************************   MEETINGS   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003690}}
+.meetBlock {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003693}}
+.meetBlock:first-child .cell:first-child h1 {
+  right: -0.04em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003696}}
+.meetBlock:first-child {
+  background-color: transparent;
+  border-color: transparent;
+  width: 40.2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003700}}
+  .meetBlock:first-child .cell {
+    width: 9.56em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003703}}
+  .meetBlock:first-child .r1 {
+    border-top: 2px solid #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003706}}
+  .meetBlock:first-child .c1 {
+    border-left: 2px solid #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003709}}
+  .meetBlock:first-child .c4 {
+    border-right: 2px solid #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003712}}
+  .meetBlock:first-child .cell:nth-child(13), .meetBlock:first-child .cell:nth-child(14), .meetBlock:first-child .cell:nth-child(17), .meetBlock:first-child .cell:nth-child(18), .meetBlock:first-child .cell:nth-child(19), .meetBlock:first-child .cell:nth-child(20) {
+    background-color: transparent;
+    border-color: transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003716}}
+  .meetBlock:first-child .cell:nth-child(9), .meetBlock:first-child .cell:nth-child(15) {
+    -webkit-border-bottom-left-radius: 0.5em;
+    -moz-border-radius-bottomleft: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-width: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003722}}
+  .meetBlock:first-child .cell:nth-child(10) {
+    border-bottom-width: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003725}}
+  .meetBlock:first-child .cell:nth-child(11), .meetBlock:first-child .cell:nth-child(12) {
+    border-top: 2px solid transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003728}}
+  .meetBlock:first-child .cell:nth-child(15) {
+    border-left: 2px solid #97372f;
+    width: 9.46em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003732}}
+  .meetBlock:first-child .cell:nth-child(16) {
+    border-bottom: 2px solid #97372f;
+    -webkit-border-bottom-right-radius: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
+    border-bottom-right-radius: 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003739}}
+.meetBlock:after, .eventBlock:after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/****************************   EVENTS   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003746}}
+body.events-gridview section.transp {
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003750}}
+.eventBlock {
+  width: 36.8em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003752}}
+  .eventBlock .c2, .eventBlock .c3, .eventBlock .c4 {
+    width: 8em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003755}}
+  .eventBlock .cell:first-child, .eventBlock .cell:nth-child(17), .eventBlock .cell:nth-child(18), .eventBlock .cell:nth-child(21), .eventBlock .cell:nth-child(22), .eventBlock .cell:nth-child(23), .eventBlock .cell:nth-child(24) {
+    background-color: transparent;
+    border-color: transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003759}}
+  .eventBlock .cell:nth-child(13), .eventBlock .cell:nth-child(14), .eventBlock .cell:nth-child(19), .eventBlock .cell:nth-child(20) {
+    border-bottom: 2px solid #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003762}}
+  .eventBlock .cell:nth-child(15), .eventBlock .cell:nth-child(16) {
+    border-top: 2px solid transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003765}}
+  .eventBlock .cell:nth-child(13), .eventBlock .cell:nth-child(19) {
+    -webkit-border-bottom-left-radius: 0.5em;
+    -moz-border-radius-bottomleft: 0.5em;
+    border-bottom-left-radius: 0.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003770}}
+  .eventBlock .cell:nth-child(19) {
+    border-left: 2px solid #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003773}}
+  .eventBlock .cell:nth-child(20) {
+    -webkit-border-bottom-right-radius: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
+    border-bottom-right-radius: 0.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003778}}
+  .eventBlock .cell:nth-child(19), .eventBlock .cell:nth-child(20) {
+    width: 7.95em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003784}}
+body.page-template-events-php section .desc {
+  margin: -5em 1.5em 0 0;
+  width: 31.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003788}}
+body.page-template-events-php section .fine {
+  width: 29em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003793}}
+body.page-id-3277 section {
+  width: 100%;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003797}}
+#tribe-events-content {
+  margin-top: 1.5em;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003800}}
+  #tribe-events-content .tribe-events-month-nav {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    border: 2px solid #97372f;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    float: left;
+    padding: 1em;
+    position: inherit; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003806}}
+  #tribe-events-content .tribe-events-calendar-buttons {
+    float: right;
+    position: inherit;
+    top: inherit; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003811}}
+  #tribe-events-content .tribe-events-button-on, #tribe-events-content .tribe-events-button-off {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    border: 2px solid #97372f;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    color: #97372f !important;
+    margin: 0 1em 2em;
+    padding: 1.5em;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003821}}
+  #tribe-events-content a.tribe-events-button-off:hover, #tribe-events-content a.tribe-events-button-off:active {
+    background-color: #97372f;
+    color: rgba(230, 215, 199, 0.9) !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003828}}
+  #tribe-events-content .tribe-events-button-on:after {
+    background-color: #97372f;
+    bottom: 0;
+    content: "";
+    -webkit-border-top-left-radius: 1em;
+    -webkit-border-top-right-radius: 1em;
+    -moz-border-radius-topleft: 1em;
+    -moz-border-radius-topright: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    height: 1em;
+    left: 50%;
+    margin-left: -1em;
+    position: absolute;
+    width: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003831}}
+  #tribe-events-content table.tribe-events-calendar {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    border: 2px solid #97372f;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    border-color: #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003834}}
+    #tribe-events-content table.tribe-events-calendar th {
+      background-color: #97372f;
+      color: rgba(230, 215, 199, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003838}}
+    #tribe-events-content table.tribe-events-calendar td {
+      border-color: #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003842}}
+    #tribe-events-content table.tribe-events-calendar .tribe-events-past .daynum {
+      background-color: #e6d7c7;
+      background-color: rgba(230, 215, 199, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003848}}
+    #tribe-events-content table.tribe-events-calendar .tribe-events-present .daynum {
+      background-color: #97372f;
+      color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003854}}
+    #tribe-events-content table.tribe-events-calendar .tribe-events-future .daynum {
+      background-color: rgba(255, 255, 255, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003859}}
+  #tribe-events-content .tribe-events-tooltip h5 {
+    background-color: #97372f;
+    color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003864}}
+#tribe-events-loop > div {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  margin: 1.5em 0;
+  padding: 1em !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003869}}
+#tribe-events-nav-below div a:link, #tribe-events-nav-below div a:visited {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  padding: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003873}}
+#tribe-events-nav-below div a:hover, #tribe-events-nav-below div a:active {
+  background-color: #97372f;
+  color: rgba(230, 215, 199, 0.9); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003877}}
+.tribe-events-event-list-meta table td {
+  background-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003880}}
+.tribe-events-events .tribe-events-event-list-meta {
+  border: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003884}}
+body.single-tribe_events .back, body.single-tribe_events .navlink {
+  display: block;
+  margin: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003888}}
+body.single-tribe_events .event-passed {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  color: #97372f;
+  text-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003893}}
+body.single-tribe_events .back a:link, body.single-tribe_events .back a:visited, body.single-tribe_events .navlink a:link, body.single-tribe_events .navlink a:visited {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003897}}
+body.single-tribe_events .back a:hover, body.single-tribe_events .back a:active, body.single-tribe_events .navlink a:hover, body.single-tribe_events .navlink a:active {
+  background-color: #97372f;
+  color: rgba(230, 215, 199, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003901}}
+body.single-tribe_events #tribe-events-event-meta, body.single-tribe_events .entry-content {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003907}}
+body.single-tribe_events section, body.events-list section {
+  padding: 0;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003911}}
+body.single-tribe_events .post-list, body.events-list .post-list {
+  width: 47em; }
+
+/****************************   GOVERNANCE   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003917}}
+body.page-template-governance-php section h1 {
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003920}}
+body.page-template-governance-php section p {
+  margin: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003924}}
+.govDocsList {
+  list-style-type: none;
+  margin: 2em 0 3em;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003929}}
+  .govDocsList li a:link, .govDocsList li a:visited {
+    font-size: 2em;
+    padding: 0.5em;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003934}}
+  .govDocsList li a:hover, .govDocsList li a:active {
+    text-decoration: underline; }
+
+/****************************   AGENDAS & NOTES   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003942}}
+body.meeting-agendas-notes article {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  display: block;
+  margin: 0 auto 2em;
+  padding: 1.5em;
+  width: 44em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003948}}
+  body.meeting-agendas-notes article h1 {
+    margin-bottom: 0.5em;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003951}}
+    body.meeting-agendas-notes article h1 a:link, body.meeting-agendas-notes article h1 a:visited {
+      text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003954}}
+    body.meeting-agendas-notes article h1 a:hover, body.meeting-agendas-notes article h1 a:active {
+      text-decoration: underline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003958}}
+  body.meeting-agendas-notes article h2 {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003962}}
+body.meeting-agendas-notes section {
+  margin: 0;
+  padding: 0;
+  width: 47em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003967}}
+  body.meeting-agendas-notes section .title h1, body.meeting-agendas-notes section .title h2 {
+    text-align: center;
+    margin-left: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003974}}
+.paginationNav {
+  height: 3.5em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003979}}
+  .paginationNav li {
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003981}}
+    .paginationNav li a:link, .paginationNav li a:visited {
+      background-color: #e6d7c7;
+      background-color: rgba(230, 215, 199, 0.9);
+      border: 2px solid #97372f;
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      border-radius: 0.5em;
+      padding: 1em;
+      text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003986}}
+    .paginationNav li a:hover, .paginationNav li a:active {
+      background-color: #97372f;
+      color: rgba(230, 215, 199, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003991}}
+  .paginationNav li.newer {
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003994}}
+  .paginationNav li.older {
+    float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\00003998}}
+.pagePos {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031004}}
+  .pagePos a {
+    padding: 0.2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031007}}
+  .pagePos .cur {
+    font-size: 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031011}}
+.civicBlock {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  margin: 0 0 2em 0;
+  padding: 0 1.5em 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031017}}
+.title a:link, .title a:visited {
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031020}}
+.title a:hover, .title a:active {
+  text-decoration: underline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031024}}
+.agenNote {
+  border-top: 2px solid #97372f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031028}}
+.agendasnotesnav h2 {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031033}}
+body.single-agendas_and_notes section {
+  width: 44em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031036}}
+body.single-agendas_and_notes article {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+  padding: 0 1.5em 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031040}}
+  body.single-agendas_and_notes article h1 {
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031045}}
+.accordion {
+  margin: 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031048}}
+  .accordion * {
+    margin: 0;
+    list-style-type: none;
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031053}}
+  .accordion li {
+    font-size: 1.3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031055}}
+    .accordion li ul {
+      margin-left: 0.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031059}}
+  .accordion li:hover {
+    cursor: pointer;
+    text-decoration: underline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031063}}
+  .accordion a:hover, .accordion a:link {
+    font-size: 0.7em; }
+
+/****************************   PROPOSALS   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031072}}
+body.page-template-proposals-php article {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  display: block;
+  margin: 0 auto 2em;
+  padding: 1.5em;
+  width: 44em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031078}}
+  body.page-template-proposals-php article h1 {
+    color: #97372f;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031083}}
+body.page-template-proposals-php section {
+  width: 47em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031086}}
+body.page-template-proposals-php h1.title {
+  text-align: center; }
+
+/****************************   PHOTOS   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031091}}
+body.page-template-photos-php {
+  background-color: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031093}}
+  body.page-template-photos-php .backstretch {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031098}}
+  body.page-template-photos-php section {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0em;
+    width: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031103}}
+    body.page-template-photos-php section h1 {
+      text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031108}}
+.galNavWrap {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031111}}
+  .galNavWrap h1 {
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031115}}
+ul.galleryNav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 1em 0 2.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031119}}
+  ul.galleryNav li {
+    margin: 0 0 0 1em;
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031122}}
+    ul.galleryNav li h2 {
+      font: 1.4em "PT Sans 700", sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031126}}
+  ul.galleryNav li:hover, ul.galleryNav li.current {
+    cursor: pointer;
+    margin-left: 0em;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031131}}
+  ul.galleryNav li.current h2 {
+    color: #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031134}}
+  ul.galleryNav li:hover:after, ul.galleryNav li.current:after {
+    background-color: #97372f;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    content: "";
+    height: 1em;
+    left: -1.5em;
+    margin-top: -0.5em;
+    position: absolute;
+    top: 50%;
+    width: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031148}}
+.flexslider {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  overflow: hidden;
+  margin: 0;
+  padding: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031154}}
+.flexWrap {
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031157}}
+.flexPanel {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031160}}
+.flexPanel .current {
+  display: block; }
+
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031176}}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* FlexSlider Necessary Styles
+*********************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031179}}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031180}}
+.flexslider .slides img {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031182}}
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* Clearfix for the .slides element */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031185}}
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031186}}
+html[xmlns] .slides {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031187}}
+* html .slides {
+  height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* FlexSlider Default Theme
+*********************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031197}}
+.flexslider {
+  position: relative;
+  width: 700px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031212}}
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031215}}
+.loading .flex-viewport {
+  max-height: 300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031216}}
+.flexslider .slides {
+  zoom: 1; }
+
+/* Direction Nav */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031224}}
+.flex-direction-nav {
+  *height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031225}}
+.flex-direction-nav a {
+  width: 30px;
+  height: 30px;
+  margin: -20px 0 0;
+  display: block;
+  background: url(images/bg_direction_nav.png) no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031226}}
+.flex-direction-nav .flex-next {
+  background-position: 100% 0;
+  right: -36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031227}}
+.flex-direction-nav .flex-prev {
+  left: -36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031228}}
+.flexslider:hover .flex-next {
+  opacity: 0.8;
+  right: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031229}}
+.flexslider:hover .flex-prev {
+  opacity: 0.8;
+  left: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031230}}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031231}}
+.flex-direction-nav .flex-disabled {
+  opacity: .3!important;
+  filter: alpha(opacity=30);
+  cursor: default; }
+
+/* Control Nav */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031234}}
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031235}}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031236}}
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031237}}
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031238}}
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031240}}
+.flex-control-thumbs {
+  position: static; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031245}}
+.flex-control-thumbs li {
+  float: left;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031250}}
+.flex-control-thumbs img {
+  display: block;
+  margin: 0.5em;
+  opacity: .7;
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031257}}
+.flex-control-thumbs img:hover {
+  opacity: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031258}}
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default; }
+
+@media screen and (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031261}}
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031262}}
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0; } }
+/****************************   SLIDER END  ****************************/
+/****************************   BLOG   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031266}}
+.blogHeader {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  margin: 0 auto 1.5em;
+  padding: 1.5em;
+  width: 47em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031271}}
+  .blogHeader h1, .blogHeader h2, .blogHeader h3 {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031274}}
+  .blogHeader h1 {
+    margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031277}}
+  .blogHeader a:link, .blogHeader a:visited {
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031280}}
+  .blogHeader a:hover, .blogHeader a:active {
+    text-decoration: underline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031284}}
+section.blog {
+  padding: 0;
+  width: 47em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031287}}
+  section.blog article {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    border: 2px solid #97372f;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    margin: 1em 0 2em;
+    padding: 0 1em 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031291}}
+    section.blog article h2.title {
+      font-size: 2.2em;
+      text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031295}}
+    section.blog article img.wp-post-image, section.blog article img.alignnone {
+      display: block;
+      margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031301}}
+.blogRotatorViewPort {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  height: 19em;
+  overflow: hidden;
+  padding: 0;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031308}}
+.blogRotatorWrap {
+  display: block;
+  height: 21em;
+  left: 0;
+  position: absolute;
+  width: 9999em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031315}}
+.blogRotatorItem {
+  float: left;
+  height: 19em;
+  width: 20.6em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031320}}
+.blogSidebar {
+  background-color: #e6d7c7;
+  background-color: rgba(230, 215, 199, 0.9);
+  border: 2px solid #97372f;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031322}}
+  .blogSidebar label {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031325}}
+  .blogSidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031329}}
+    .blogSidebar ul li:nth-child(1) {
+      border-top: 1px solid #97372f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031332}}
+    .blogSidebar ul li {
+      border-bottom: 1px solid #97372f;
+      padding: 0.4em 0;
+      text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031336}}
+      .blogSidebar ul li a:link, .blogSidebar ul li a:visited {
+        padding: 0.5em;
+        text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031340}}
+      .blogSidebar ul li a:hover, .blogSidebar ul li a:active {
+        background-color: #97372f;
+        color: rgba(230, 215, 199, 0.9); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031347}}
+.blogFooterWidgetArea {
+  margin-top: 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031349}}
+  .blogFooterWidgetArea .blogFooterWidget {
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    border: 2px solid #97372f;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    display: inline;
+    float: left;
+    height: 14.45em;
+    margin-right: 1em;
+    padding: 1em;
+    width: 14.45em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031358}}
+  .blogFooterWidgetArea .blogFooterWidget:last-child {
+    margin: 0; }
+
+/****************************   TESTIMONIALS   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031363}}
+body.page-template-testimonials-php section {
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031365}}
+  body.page-template-testimonials-php section h1 {
+    margin-left: 1em;
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031370}}
+.testi {
+  border-top: 2px solid #97372f;
+  padding: 0 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031373}}
+  .testi h3 {
+    font: 2em "lobster", cursive;
+    margin: 1em 0 0.5em 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031377}}
+  .testi p {
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031380}}
+  .testi blockquote {
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    background-color: #e6d7c7;
+    background-color: rgba(230, 215, 199, 0.9);
+    margin: 1em;
+    padding: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031387}}
+  .testi blockquote:after, .testi blockquote:before {
+    color: #97372f;
+    content: "\"";
+    font: 1.5em "Lobster", cursive;
+    font-weight: bold;
+    line-height: 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031396}}
+.testi:nth-child(2n) img {
+  float: right; }
+
+/****************************   404   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031401}}
+body.error404 section > * {
+  margin: 1em; }
+
+/****************************   sitemap page   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031405}}
+body.page-template-sitemap-php section {
+  padding: 1em;
+  width: 45em; }
+
+/****************************   5. Catch Alls   ****************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031411}}
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031415}}
+.group:after {
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031418}}
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/fitzryland\/Dropbox\/Sites\/MAMP\%20Sites\/htdocs\/collectiveagencyco\/wp-content\/themes\/collectiveagency\/style\.scss}line{font-family:\000031421}}
+.clear {
+  clear: both; }
