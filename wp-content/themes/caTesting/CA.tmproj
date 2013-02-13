@@ -278,7 +278,7 @@
 		<string>single-proposal.php</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-	<true/>
+	<false/>
 	<key>windowFrame</key>
 	<string>{{542, 4}, {892, 874}}</string>
 </dict>
