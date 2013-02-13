@@ -131,7 +131,7 @@
 	
 	======================================================================================================================== */
 
-	add_action( 'wp_enqueue_scripts', 'script_enqueuer' );
+//	add_action( 'wp_enqueue_scripts', 'script_enqueuer' );
 
 	add_filter( 'body_class', 'add_slug_to_body_class' );
 	
