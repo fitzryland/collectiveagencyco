@@ -198,7 +198,6 @@
 	 * @author Keir Whitaker
 	 */
 
-
 	// From http://css-tricks.com/snippets/php/sanitize-database-inputs/
 	function cleanInput($input) {
 		$search = array(
