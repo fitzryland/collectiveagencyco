@@ -19,7 +19,6 @@ wp-content/cache/supercache/*
 
 # Added by Fitz
 wp-config.php
-mysql.sql
 
 # wpengine specific
 .smushit-status
