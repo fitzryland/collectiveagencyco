@@ -236,7 +236,4 @@
 			</article>
 		<?php endif;
 	}
-	
-	
-	
 ?>
