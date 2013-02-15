@@ -18,8 +18,8 @@
 	?>
 	<section class="transp">
 		<ul class="paginationNav">
-			<li class="newer"><?php $newerLink = previous_post_link('%link', 'More Recent Meeting'); ?></li>
-			<li class="older"><?php next_post_link('%link', 'Older Meeting'); ?></li>
+			<li class="newer"><?php $newerLink = previous_post_link('%link', 'Older Meeting'); ?></li>
+			<li class="older"><?php next_post_link('%link', 'More Recent Meeting'); ?></li>
 		</ul>
 		<article>
 			<div class="title">
@@ -42,8 +42,8 @@
 		<?php }; ?>
 		</article>
 		<ul class="paginationNav">
-			<li class="newer"><?php $newerLink = previous_post_link('%link', 'More Recent Meeting'); ?></li>
-			<li class="older"><?php next_post_link('%link', 'Older Meeting'); ?></li>
+			<li class="newer"><?php $newerLink = previous_post_link('%link', 'Older Meeting'); ?></li>
+			<li class="older"><?php next_post_link('%link', 'More Recent Meeting'); ?></li>
 		</ul>
 	</section>
 	<?php endwhile; ?>
