@@ -92,6 +92,7 @@ wp_reset_query();
 		<li><a href="<?php echo $curPageNum . "?tag=" . $tagSlug; ?>"><?php echo $tagName; ?></a></li>
 	<?php }; ?>
 	</ul><!--.tags-->
+	
 </div><!--.tagsWrap-->
 <?php
 $wp_query = $temp_wp_query;
