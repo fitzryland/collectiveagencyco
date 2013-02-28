@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>functions.php</string>
+	<string>parts/agendasnotesnav.php</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -54,9 +54,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>4</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>198</integer>
+				<integer>192</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -76,6 +76,20 @@
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>30</integer>
+		</dict>
+		<key>parts/agendasnotesnav.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>18</integer>
+				<key>line</key>
+				<integer>93</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>52</integer>
 		</dict>
 		<key>parts/blogRotator.php</key>
 		<dict>
@@ -149,6 +163,20 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>single-agendas_and_notes.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>82</integer>
+				<key>line</key>
+				<integer>44</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>1</integer>
+		</dict>
 		<key>style.scss</key>
 		<dict>
 			<key>caret</key>
@@ -181,6 +209,8 @@
 	<key>openDocuments</key>
 	<array>
 		<string>style.scss</string>
+		<string>single-agendas_and_notes.php</string>
+		<string>parts/agendasnotesnav.php</string>
 		<string>functions.php</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
